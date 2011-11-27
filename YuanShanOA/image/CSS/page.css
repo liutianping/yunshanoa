@@ -1,0 +1,250 @@
+﻿body 
+{
+	 margin:0px auto;
+	  padding:0px;
+	  font:15px "宋体","Arial"，"黑体","华文仿宋";
+}
+
+ *  
+ {
+ 	margin:0px; padding:0px; 
+ 	outline:none;
+ }
+.wrapper
+{
+	width:1024px;
+	height:768px;
+	margin:0px auto;
+	position:relative;
+	
+}
+.head
+{
+	width:1024px;
+	height:135px;
+	 background:url(/image/headbg.jpg) no-repeat top left;
+}
+
+
+.menu
+{
+	background:url(/image/mbg.jpg) no-repeat top left;
+	width:190px;
+	height:543px;
+	float:left;
+	margin-top:0px;
+}
+
+	 
+
+
+
+ul, li, p, h1, h2, h3, div, label, input, form  
+{
+	list-style:none; padding:0px; margin:0px; 
+	}
+	 
+
+	 
+.toggle   
+{
+	margin:3px 0px 0px 0px !important;
+	margin:7px 0px 0px 0px;
+	width:189px;
+	
+	
+	
+}
+
+
+
+.level1 
+{
+	cursor:pointer;
+	background:url(/image/menu.jpg) no-repeat top left;
+	width:189px; 
+	height:29px;  
+
+	}
+	
+.level2  
+{
+	padding:15px 0px 5px 65px;
+	line-height:24px; 
+
+	}
+
+.ftext
+{
+	color:White;
+	padding:7px 0px 0px 65px;
+	font-weight:600; 
+	font-size:13px;
+}
+	
+.level2 ul a  
+{
+	text-decoration:none;
+	font-size:13px;
+	color:White;
+	font-weight:600; 
+	padding:0px 0px 0px 70px;
+	
+	
+}
+
+.level2 ul
+{
+	width:189px;
+	margin-left:-60px;
+}
+	
+.level2 ul li
+{
+	
+	width:189px;
+	height:32px;
+	margin-left:-6px;
+	background-image:url(../image/a.jpg);
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+
+	
+.lbroadside
+{
+	width:2px;
+	height:543px;
+	 background:url(/image/broadside.jpg) no-repeat top left;
+	 margin:0px 0px 0px 0px !important;
+	 _marging:0px 0px 0px 0px;
+	 margin:0px 0px 0px 0px;
+	 float:left;
+}
+
+.rbroadside
+{
+	width:40px;
+	height:543px;
+	 float:left;
+	 background:url(/image/broadside.jpg) no-repeat top left;
+	 margin:0px 0px 0px 0px !important;
+	 _margin-left:0px;
+	 margin:0px 0px 0px 0px;
+	 
+}
+	
+.holder
+{
+	
+	float:left;
+	width:792px;
+	 height:543px;
+     overflow-x:hidden;	
+     overflow-y:scroll;
+	 background:url(/image/content-bg.jpg) repeat-x top left;
+	 
+}
+
+.holder Button
+{
+}
+
+.foot
+{
+	margin:0px;
+	width:1024px;
+	height:80px;
+	background-color:#0373a9;
+	clear:both;
+}
+
+.clock
+{
+	width:165px; 
+	height:100px; 
+	margin:0px 0px 0px 860px;
+}
+
+
+
+
+
+
+
+
+
+
+.gvStyle th { 
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+	color:#fff;
+	text-align:center;
+	background-image:url(/image/t_header.gif);
+	background-repeat:repeat-x;
+	
+	border-top:solid 1px #C1DAD7; 
+	letter-spacing: 2px; 
+	text-transform: uppercase; 
+	padding: 6px 12px 6px 12px; 
+} 
+
+.gvStyle td { 
+	font-size:14px; 
+	color: #4f6b72; 
+     text-align:center;
+	border-right: 1px solid #C1DAD7; 
+	border-bottom: 1px solid #C1DAD7;
+	padding: 6px 6px 6px 6px; 
+	
+}
+ 
+.gvStyle a {
+     color:#4f6b72;
+}
+
+.gvStyle a:hover
+{
+      color:#f19200;
+}
+
+/*OnMouseOver 滑鼠移過列表時, 背景色變更*/
+.gvStyle tr:hover
+{
+background-color:#f1f9fe;
+}
+
+
+/*Change Rows 如果想要有單、雙列不同顏色替換, 在這裡更換*/
+.gvStyle .alt
+{
+background-color:#eff0f0;
+border: 1px solid #ccc;
+height:25px;
+}
+
+.mbtn
+{
+	width:50px;
+	height:22px;
+	background:url(/image/1.jpg) repeat-x top left;
+}
+
+
+
+ .btnCar
+{
+	width:100px;
+	height:24px;
+	border-bottom:2px solid Black;
+	border-left:1px solid Black;
+	border-right:2px solid Black;
+	border-top:1px solid Black;
+}
+
+.btnCarClick
+{
+	border-bottom:1px solid Black;
+	border-left:2px solid Black;
+	border-right:1px solid Black;
+	border-top:2px solid Black;
+}

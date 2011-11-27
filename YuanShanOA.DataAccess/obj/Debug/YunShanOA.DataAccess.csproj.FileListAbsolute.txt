@@ -1,0 +1,10 @@
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.DataAccess.dll.config
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.DataAccess.dll
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.DataAccess.pdb
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.IDataAccess.dll
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.Model.dll
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.Model.pdb
+G:\YunShanOA\YuanShanOA.DataAccess\bin\Debug\YunShanOA.IDataAccess.pdb
+G:\YunShanOA\YuanShanOA.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YuanShanOA.DataAccess\obj\Debug\YunShanOA.DataAccess.dll
+G:\YunShanOA\YuanShanOA.DataAccess\obj\Debug\YunShanOA.DataAccess.pdb

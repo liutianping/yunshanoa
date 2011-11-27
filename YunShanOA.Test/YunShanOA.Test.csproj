@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2177B96-4F8E-4245-97AE-846A4D26D6C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YunShanOA.Test</RootNamespace>
+    <AssemblyName>YunShanOA.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.0.11089, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MeetingApplyTest.cs" />
+    <Compile Include="MeetingEquipment.cs" />
+    <Compile Include="MeetingRoomTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestMeetingType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YuanShanOA.DataAccess\YunShanOA.DataAccess.csproj">
+      <Project>{DAC581D1-729E-4033-9CDB-FF5E82083D89}</Project>
+      <Name>YunShanOA.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YuanShanOA.Model\YunShanOA.Model.csproj">
+      <Project>{CF3BA126-452C-4829-A2AF-489845B1B82B}</Project>
+      <Name>YunShanOA.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YuanShanOA\YunShanOA.csproj">
+      <Project>{5498A1A9-E0D8-440F-AB61-A7003B31D8F2}</Project>
+      <Name>YunShanOA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YunShanOA.DALFactory\YunShanOA.DALFactory.csproj">
+      <Project>{72CCD236-613B-49B1-A657-10499385AF9E}</Project>
+      <Name>YunShanOA.DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YunShanOA.IDataAccess\YunShanOA.IDAL.csproj">
+      <Project>{5B277D44-1743-4E89-8E79-B13EBDB6B260}</Project>
+      <Name>YunShanOA.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\nunit.framework.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

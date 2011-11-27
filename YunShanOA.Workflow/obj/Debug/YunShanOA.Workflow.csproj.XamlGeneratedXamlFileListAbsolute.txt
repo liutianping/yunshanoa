@@ -1,0 +1,3 @@
+obj\Debug\MeetingApply.g.xaml
+obj\Debug\DocumentPublish.g.xaml
+obj\Debug\UseCarApply.g.xaml

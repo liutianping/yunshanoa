@@ -1,0 +1,4 @@
+obj\Debug\_YunShanOA.Workflow.g.cs
+obj\Debug\MeetingApply.g.cs
+obj\Debug\DocumentPublish.g.cs
+obj\Debug\UseCarApply.g.cs

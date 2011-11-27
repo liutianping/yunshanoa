@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="TestMeetingRoom" id="119f193d-c0c7-49e8-93a3-44e7fa383a9a" parentListId="d30c5285-f477-481a-b2ce-ac258c85f7c8">
+    <Description>测试会议室名字的增删改</Description>
+  </TestList>
+  <TestList name="InsertMeetingRoom" id="5698623b-ad91-400e-a076-a8b380647fda" parentListId="119f193d-c0c7-49e8-93a3-44e7fa383a9a" />
+  <TestList name="UpdateMeetingRoom" id="5f969cb9-6699-41d8-bb38-00bbf4fb3390" parentListId="119f193d-c0c7-49e8-93a3-44e7fa383a9a" />
+  <TestList name="测试列表" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+  <TestList name="TestMeetingApply" id="d30c5285-f477-481a-b2ce-ac258c85f7c8" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>对申请会议进行测试</Description>
+  </TestList>
+  <TestList name="TestMeetingType" id="e577d5d3-f73c-4d54-91bc-c97e7c4459d0" parentListId="d30c5285-f477-481a-b2ce-ac258c85f7c8">
+    <Description>对会议类型进行增删改</Description>
+  </TestList>
+</TestLists>

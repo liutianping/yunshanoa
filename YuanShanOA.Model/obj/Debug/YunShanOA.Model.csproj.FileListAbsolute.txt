@@ -1,0 +1,5 @@
+G:\YunShanOA\YuanShanOA.Model\bin\Debug\YunShanOA.Model.dll
+G:\YunShanOA\YuanShanOA.Model\bin\Debug\YunShanOA.Model.pdb
+G:\YunShanOA\YuanShanOA.Model\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YuanShanOA.Model\obj\Debug\YunShanOA.Model.dll
+G:\YunShanOA\YuanShanOA.Model\obj\Debug\YunShanOA.Model.pdb

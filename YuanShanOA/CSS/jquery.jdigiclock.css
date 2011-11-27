@@ -1,0 +1,81 @@
+#plugin_container {
+    width:200px;
+    height:100px;
+    position:relative;
+   
+    
+    font-family:Arial, Verdana, Tahoma, Helvetica, sans-serif;
+    color:#fff;
+}
+
+#plugin_container p {
+    margin:0;
+    padding:0;
+}
+
+
+#digital_container {
+    width:155px;
+    height:100px;
+    background:url(../image/background.png)  no-repeat top left;
+    position:absolute;
+    top:10px;
+    left:0;
+    z-index:98;
+}
+
+
+#clock {
+    float:left;
+    margin:-10px 0px 0px 7px;
+    _margin:-10px 0px 0px 5px;
+}
+
+#hours, #minutes {
+    width:70px;
+    height:70px;
+    float:left;
+    position:relative;
+}
+
+#minutes {
+    margin-left:2px;
+    _margin-left:-3px;
+}
+
+#hours_bg, #minutes_bg {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:99;
+}
+
+.first_digit {
+    width:28px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:8px;
+    z-index:100;
+}
+
+.second_digit {
+    width:28px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:33px;
+    z-index:100;
+}
+
+
+#am_pm {
+    position:absolute;
+    top:156px;
+    left:130px;
+    z-index:110;
+}
+
+

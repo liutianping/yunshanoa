@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:UseCarApply mva:VisualBasic.Settings="Assembly references and imported namespaces for internal implementation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:local="clr-namespace:YunShanOA.Workflow.UseCar;assembly=YunShanOA.Workflow" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:s4="clr-namespace:System;assembly=System.ServiceModel" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ymu="clr-namespace:YunShanOA.Model.UseCarModel;assembly=YunShanOA.Model">
+  <local:UseCarApply.Implementation>
+    <Sequence DisplayName="用车申请流程" sad:XamlDebuggerXmlReader.FileName="C:\Users\Administrator\Desktop\YunShanOA\YunShanOA\YunShanOA.Workflow\UseCar\UseCarApply.xaml">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ymu:usecarapplyform" Name="Apply" />
+        <Variable x:TypeArguments="local:ArrangeDrawOutFrom" Name="ArrangeDrawOutFrom" />
+        <Variable x:TypeArguments="ymu:ReviewUseCarApplyForm" Name="ReviewUseCarApplyForm" />
+        <Variable x:TypeArguments="local:RenewForm" Name="RenewCarForm" />
+        <Variable x:TypeArguments="x:Boolean" Name="IfReturnCar" />
+        <Variable x:TypeArguments="ymu:ReviewUseCarApplyForm" Name="ReviewUseCarApplyForm2" />
+        <Variable x:TypeArguments="local:RenewForm" Name="RenewCarForm1" />
+      </Sequence.Variables>
+      <local:CreateApply Apply="[Apply]" DisplayName="通过请求创建申请表单" request="[Request]" />
+      <local:WaitForExamine x:TypeArguments="ymu:ReviewUseCarApplyForm" BookmarkName="WaitForExamine" DisplayName="等待审批" Input="[ReviewUseCarApplyForm]" />
+      <If Condition="[ReviewUseCarApplyForm.Agree = 1]" DisplayName="判断审核是否通过">
+        <If.Then>
+          <Sequence DisplayName="审核通过">
+            <local:UpdateApply DisplayName="更新Apply为通过" OUTApplyForm="[Apply]" ReviewUseCarApplyForm="[ReviewUseCarApplyForm]" UpdateApplyInfo="[Apply]" />
+            <local:SendMail Apply="[Apply]" />
+            <local:ArrangeDrawOut x:TypeArguments="local:ArrangeDrawOutFrom" BookmarkName="WaitArrangeDrawOut" DisplayName="等待安排出车" Input="[ArrangeDrawOutFrom]" />
+            <local:UpdateCarState DisplayName="更新车的状态" UpdateApplyInfo="[ArrangeDrawOutFrom]" />
+            <local:SendMail Apply="[Apply]" />
+            <local:WaitReturnCar x:TypeArguments="local:RenewForm" BookmarkName="WaitForRenewCarExamine" DisplayName="还车或者是续车" Input="[RenewCarForm]" />
+            <Assign>
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[IfReturnCar]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">[RenewCarForm.IsRenew]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <While Condition="[IfReturnCar]">
+              <Sequence DisplayName="续车">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="s:DateTime" Name="BeginTime" />
+                  <Variable x:TypeArguments="ymu:ReviewUseCarApplyForm" Name="variable1" />
+                </Sequence.Variables>
+                <Assign>
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:DateTime">[BeginTime]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:DateTime">[Apply.BeginTime]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <local:UpdateafterRenewApply DisplayName="跟新表单时间和状态为6" OUTApplyForm="[Apply]" RenewForm="[RenewCarForm]" UpdateApplyInfo="[Apply]" />
+                <local:Wait x:TypeArguments="ymu:ReviewUseCarApplyForm" BookmarkName="asd" DisplayName="等待续车申请的审批" Input="[variable1]" />
+                <local:SendMailRenew Apply="[Apply]" DisplayName="发送信息" ReviewUseCarApplyForm="[variable1]" />
+                <If Condition="[variable1.Agree = 1]">
+                  <If.Then>
+                    <local:RUpdateApply BeginTime="[BeginTime]" DisplayName="更新结束时间" OUTApplyForm="[Apply]" ReviewUseCarApplyForm="[variable1]" UpdateApplyInfo="[Apply]" />
+                  </If.Then>
+                  <If.Else>
+                    <local:RUpdateApply BeginTime="[BeginTime]" DisplayName="更新为以前的表达状态" OUTApplyForm="[Apply]" ReviewUseCarApplyForm="[variable1]" UpdateApplyInfo="[Apply]" />
+                  </If.Else>
+                </If>
+                <local:WaitReturnCar x:TypeArguments="local:RenewForm" BookmarkName="WaitForRenewCarExamine" DisplayName="还车或者是续车" Input="[RenewCarForm1]" />
+                <Assign>
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[IfReturnCar]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">[RenewCarForm1.IsRenew]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </While>
+            <local:ReturnCar DisplayName="还车操作" UpdateApplyInfo="[ArrangeDrawOutFrom]" />
+            <local:ArchiveUserCarApply DisplayName="归档操作" UpdateApplyInfo="[Apply]" />
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="审核不通过">
+            <local:UpdateApply OUTApplyForm="{x:Null}" DisplayName="更新Apply为不通过" ReviewUseCarApplyForm="[ReviewUseCarApplyForm]" UpdateApplyInfo="[Apply]" />
+            <local:SendMail Apply="[Apply]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </local:UseCarApply.Implementation>
+</local:UseCarApply>

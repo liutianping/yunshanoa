@@ -1,0 +1,56 @@
+﻿.mnuTopMenu
+{
+    background-color:Transparent;
+    font-family: 宋体;
+    font-size: 12px;
+    position:relative;
+    top:34px;
+}
+
+.DynamicMenuStyle /*动态菜单矩形区域样式*/
+{
+    background-color: white;
+    border: solid 1px #ACC3DF;
+    padding: 1px 1px 1px 1px;
+    text-align: left;
+}
+
+.DynamicHoverStyle /*动态菜单项:鼠标悬停时的样式*/
+{
+    background-color: #F7DFA5; /*#7C6F57;*/
+    color: #333333;
+}
+
+.DynamicSelectedStyle /*动态菜单项:选择时的样式*/
+{
+    /*background-color:Gainsboro;*/
+    color: red;
+}
+
+.DynamicMenuItemStyle /*动态菜单项样式*/
+{
+    padding: 2px 5px 2px 5px;
+    color: #333333;
+}
+
+
+.StaticSelectedStyle /*静态菜单项:选择时的样式*/
+{
+    /*background-color:Gainsboro;*/
+    color: red;
+}
+
+.StaticMenuItemStyle /*静态菜单项样式*/
+{
+    cursor: hand;
+    padding: 2px 5px 2px 5px;
+    color: #333333;
+    background-color:Transparent;
+}
+
+.StaticHoverStyle /*静态菜单项:鼠标悬停时的样式*/
+{
+    background-color: #84BCCD; /*#7C6F57;*/
+    cursor: hand;
+    color: #333333;
+}

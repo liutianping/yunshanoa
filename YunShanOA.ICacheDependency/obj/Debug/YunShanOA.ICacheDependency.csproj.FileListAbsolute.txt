@@ -1,0 +1,5 @@
+G:\YunShanOA\YunShanOA.ICacheDependency\bin\Debug\YunShanOA.ICacheDependency.dll
+G:\YunShanOA\YunShanOA.ICacheDependency\bin\Debug\YunShanOA.ICacheDependency.pdb
+G:\YunShanOA\YunShanOA.ICacheDependency\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YunShanOA.ICacheDependency\obj\Debug\YunShanOA.ICacheDependency.dll
+G:\YunShanOA\YunShanOA.ICacheDependency\obj\Debug\YunShanOA.ICacheDependency.pdb

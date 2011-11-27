@@ -1,0 +1,9 @@
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\bin\Debug\YunShanOA.CacheDependencyFactory.dll
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\bin\Debug\YunShanOA.CacheDependencyFactory.pdb
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\bin\Debug\YunShanOA.ICacheDependency.dll
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\bin\Debug\YunShanOA.TableCacheDependency.dll
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\bin\Debug\YunShanOA.ICacheDependency.pdb
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\bin\Debug\YunShanOA.TableCacheDependency.pdb
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\obj\Debug\YunShanOA.CacheDependencyFactory.dll
+G:\YunShanOA\YunShanOA.CacheDependencyFactory\obj\Debug\YunShanOA.CacheDependencyFactory.pdb

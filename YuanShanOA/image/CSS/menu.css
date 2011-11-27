@@ -1,0 +1,108 @@
+﻿body {
+}
+
+
+ *  
+ {
+ 	margin:0px; padding:0px; 
+ 	}
+
+ul, li, p, h1, h2, h3, div, label, input, form  
+{
+	list-style:none; padding:0px; margin:0px; 
+	}
+	
+#header  
+{
+	width:600px; 
+	margin:20px auto 0;
+	color:#ffffff;  
+	height:90px; 
+	line-height:90px; 
+	font-size:20px; 
+	overflow:hidden; 
+	}
+	
+#header p  
+{
+	padding-left:15px; 
+	font-weight:bold; 
+	}
+	
+#header p span.date  
+{
+	float:right; 
+	padding-right:15px; 
+	font-size:14px;
+	 padding-top:10px; 
+	 font-weight:normal; 
+	 }
+	 
+.content  
+{
+	width:596px; 
+	_height:430px;  
+	min-height:430px;
+	 margin:0 auto; 
+	 border:2px solid #AAAA00; 
+	 border-top:none; 
+	 background-color:#FFFFFF; 
+	 overflow:hidden; 
+	 }
+	 
+.toggle   
+{
+	margin:20px auto; 
+	width:189px;
+	height:577px;
+	 background-color:#0238b2;
+}
+
+.hover  
+{
+	
+	background-repeat:no-repeat;
+	background-position:top left;
+	
+	}
+
+.first 
+{
+	font-weight:600; 
+	font-size:13px;
+	width:189px; 
+	height:29px;  
+	color:White;
+	cursor:pointer; 
+    
+	background-image:url(/image/menu.jpg); 
+	background-position:top left; 
+	background-repeat:no-repeat; 
+	padding:5px 0px 0px 63px;
+	
+	}
+	
+.toggle dl dd  
+{
+	padding-left:50px; 
+	line-height:24px; 
+	}
+
+.toggle dl dd ul  
+{
+	padding-bottom:12px; 
+	}
+	
+.toggle dl dd ul li  
+{
+	list-style: circle inside none; 
+	}
+	
+a  
+{
+	text-decoration:none;
+	font-size:13px;
+	color:White;
+	font-weight:600; 
+	}
+	

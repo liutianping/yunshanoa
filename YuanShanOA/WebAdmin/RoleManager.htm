@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../JS/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="../JS/admin.js" type="text/javascript"></script>
+</head>
+<body>
+    <form method="post" action="">
+    <div class="button">
+    <input id="btnCreatRole" type="button" value="添加角色" />
+    <input id="btnDeleteRole" type="button" value="删除角色"/>
+    <input id="btnRoleManager" type="button" value="用户-角色管理" />
+    </div>
+
+    <div class="content">
+    <div id="roleManager"><div id="showRole"></div><div id="getUName"></div><div id="message" style=" color:Red;"></div></div>
+    <div id="createRole"><input type="text" id="txtRoleName" /><input type="button" id="btnAddRole" value="添加角色" onclick="addRole()" /><div id="addRole" style=" color:Red"></div></div>
+    <div id="deleteRole">
+        <div id="delete"></div><input id="btnConfirmDelete" type="button" value="确认删除" onclick="deleteRole()" />     
+    </div>
+    </div>
+    <div id="selectedName" style=" display:none;"></div>
+    <div id="tempRole" style=" display:none;"></div>
+
+    </form>
+</body>
+</html>

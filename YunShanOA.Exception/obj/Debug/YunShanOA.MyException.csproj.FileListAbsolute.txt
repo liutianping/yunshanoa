@@ -1,0 +1,5 @@
+G:\YunShanOA\YunShanOA.Exception\bin\Debug\YunShanOA.MyException.dll
+G:\YunShanOA\YunShanOA.Exception\bin\Debug\YunShanOA.MyException.pdb
+G:\YunShanOA\YunShanOA.Exception\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YunShanOA.Exception\obj\Debug\YunShanOA.MyException.dll
+G:\YunShanOA\YunShanOA.Exception\obj\Debug\YunShanOA.MyException.pdb

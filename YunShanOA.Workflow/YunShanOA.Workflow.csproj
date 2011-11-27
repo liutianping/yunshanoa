@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57995463-6A0D-4389-BF75-CD985F1E75A8}</ProjectGuid>
+    <ProjectTypeGuids>{32f31d43-81cc-4c15-9de6-3fc5453562b6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YunShanOA.Workflow</RootNamespace>
+    <AssemblyName>YunShanOA.Workflow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.DurableInstancing" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.DurableInstancing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentWF\CreateApply.cs" />
+    <Compile Include="DocumentWF\DocumentWorkFlowProcess.cs" />
+    <Compile Include="DocumentWF\RequestInfo.cs" />
+    <Compile Include="DocumentWF\ReviewCheck.cs" />
+    <Compile Include="DocumentWF\ReviewQicao.cs" />
+    <Compile Include="DocumentWF\SendMail.cs" />
+    <Compile Include="DocumentWF\UpdateAfterCheck.cs" />
+    <Compile Include="DocumentWF\UpdateDocumentApply.cs" />
+    <Compile Include="DocumentWF\WaitChecking.cs" />
+    <Compile Include="DocumentWF\WaitReviewQicao.cs" />
+    <Compile Include="DocumentWF\WaitCheckingChecking.cs" />
+    <Compile Include="DocumentWF\UpdateAfterCheckCheck.cs" />
+    <Compile Include="DocumentWF\ReviewCheckCheck.cs" />
+    <Compile Include="MailHelp.cs" />
+    <Compile Include="MailModel.cs" />
+    <Compile Include="Meeting\ArrangementEquipment.cs" />
+    <Compile Include="Meeting\CreateMeetingApply.cs" />
+    <Compile Include="Meeting\MeetingApplyFlowProcess.cs" />
+    <Compile Include="Meeting\MeetingArchive.cs" />
+    <Compile Include="Meeting\SendMail.cs" />
+    <Compile Include="Meeting\UpdateApply.cs" />
+    <Compile Include="Meeting\UpdateMeeingAndEquipment.cs" />
+    <Compile Include="Meeting\WaitArrangementMeetingEquipment.cs" />
+    <Compile Include="Meeting\WaitForInput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SendEmail.cs" />
+    <Compile Include="UseCar\ArchiveUserCarApply.cs" />
+    <Compile Include="UseCar\RenewForm.cs" />
+    <Compile Include="UseCar\ReturnCar.cs" />
+    <Compile Include="UseCar\RUpdateApply.cs" />
+    <Compile Include="UseCar\SendMail.cs" />
+    <Compile Include="UseCar\SendMailRenew.cs" />
+    <Compile Include="UseCar\UpdateafterRenewApply.cs" />
+    <Compile Include="UseCar\UpdateCarState.cs" />
+    <Compile Include="UseCar\Wait.cs" />
+    <Compile Include="UseCar\WaitArrangeDrawOut.cs" />
+    <Compile Include="UseCar\ArrangeDrawOutFrom.cs" />
+    <Compile Include="UseCar\CreateApply.cs" />
+    <Compile Include="UseCar\RequestForm.cs" />
+    <Compile Include="UseCar\UpdateApply.cs" />
+    <Compile Include="UseCar\WaitForExamine.cs" />
+    <Compile Include="UseCar\UseCarWorkFlowProcess.cs" />
+    <Compile Include="UseCar\WaitReturnCar.cs" />
+    <Compile Include="UseCar\WaitForRenewCarExamine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YuanShanOA.BusinessLogic\YunShanOA.BusinessLogic.csproj">
+      <Project>{AAC06886-EB58-4952-8EB3-02751C04C6A1}</Project>
+      <Name>YunShanOA.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YuanShanOA.DataAccess\YunShanOA.DataAccess.csproj">
+      <Project>{DAC581D1-729E-4033-9CDB-FF5E82083D89}</Project>
+      <Name>YunShanOA.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YuanShanOA.Model\YunShanOA.Model.csproj">
+      <Project>{CF3BA126-452C-4829-A2AF-489845B1B82B}</Project>
+      <Name>YunShanOA.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppdef Include="Meeting\MeetingApply.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppdef>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppdef Include="DocumentWF\DocumentPublish.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppdef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppdef Include="UseCar\UseCarApply.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppdef>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

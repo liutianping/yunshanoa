@@ -1,0 +1,7 @@
+G:\YunShanOA\YunShanOA.TableCacheDependency\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YunShanOA.TableCacheDependency\bin\Debug\YunShanOA.TableCacheDependency.dll
+G:\YunShanOA\YunShanOA.TableCacheDependency\bin\Debug\YunShanOA.TableCacheDependency.pdb
+G:\YunShanOA\YunShanOA.TableCacheDependency\bin\Debug\YunShanOA.ICacheDependency.dll
+G:\YunShanOA\YunShanOA.TableCacheDependency\bin\Debug\YunShanOA.ICacheDependency.pdb
+G:\YunShanOA\YunShanOA.TableCacheDependency\obj\Debug\YunShanOA.TableCacheDependency.dll
+G:\YunShanOA\YunShanOA.TableCacheDependency\obj\Debug\YunShanOA.TableCacheDependency.pdb

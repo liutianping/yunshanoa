@@ -1,0 +1,933 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5498A1A9-E0D8-440F-AB61-A7003B31D8F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YunShanOA</RootNamespace>
+    <AssemblyName>YuanShanOA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\jqtransform.css" />
+    <Content Include="CSS\jquery.jdigiclock.css" />
+    <Content Include="CSS\login.css" />
+    <Content Include="CSS\menu.css" />
+    <Content Include="CSS\page.css" />
+    <Content Include="CSS\UseCar.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Director_of_Eduction\ReviewMyProcess.aspx" />
+    <Content Include="Document\DocumentChecking.aspx" />
+    <Content Include="Document\DocumentCheckingByJU.aspx" />
+    <Content Include="Document\DocumentDraft.aspx" />
+    <Content Include="Document\DocumentExamine.aspx" />
+    <Content Include="Document\Uploads\【第二季冠军】Ruben Studdard-I Need An Angel.mp3" />
+    <Content Include="Document\_assets\css\progress.css" />
+    <Content Include="Document\_assets\css\upload.css" />
+    <Content Include="Document\_assets\img\error.png" />
+    <Content Include="Document\_assets\img\progress_bg_large.gif" />
+    <Content Include="Document\_assets\img\progress_bg_lightblue.gif" />
+    <Content Include="Document\_assets\img\progress_green.gif" />
+    <Content Include="Document\_assets\img\progress_lightblue.gif" />
+    <Content Include="Document\_assets\img\progress_orange.gif" />
+    <Content Include="Document\_assets\img\progress_orange_large.gif" />
+    <Content Include="Document\_assets\img\progress_red.gif" />
+    <Content Include="Document\_assets\img\progress_solidblue.gif" />
+    <Content Include="Document\_assets\img\progress_yellow.gif" />
+    <Content Include="Document\_assets\img\safari.gif" />
+    <Content Include="Document\_assets\img\safari_bg.gif" />
+    <Content Include="Document\_assets\img\success.png" />
+    <Content Include="Document\_assets\img\vista.gif" />
+    <Content Include="Document\_assets\img\vista_bg.gif" />
+    <Content Include="Document\_assets\img\xp.gif" />
+    <Content Include="error.htm" />
+    <Content Include="image\1.jpg" />
+    <Content Include="image\a-1.jpg" />
+    <Content Include="image\a.jpg" />
+    <Content Include="Director_of_Eduction\Default.aspx" />
+    <Content Include="image\background.png" />
+    <Content Include="image\bg-1.jpg" />
+    <Content Include="image\broadside.jpg" />
+    <Content Include="image\b_login-1.gif" />
+    <Content Include="image\b_login.gif" />
+    <Content Include="image\clock\0-1.png" />
+    <Content Include="image\clock\0-2.png" />
+    <Content Include="image\clock\0-3.png" />
+    <Content Include="image\clock\0.png" />
+    <Content Include="image\clock\001-1.png" />
+    <Content Include="image\clock\001-2.png" />
+    <Content Include="image\clock\001-3.png" />
+    <Content Include="image\clock\01-1.png" />
+    <Content Include="image\clock\01-2.png" />
+    <Content Include="image\clock\01-3.png" />
+    <Content Include="image\clock\1-1.png" />
+    <Content Include="image\clock\1-2.png" />
+    <Content Include="image\clock\1-3.png" />
+    <Content Include="image\clock\1.png" />
+    <Content Include="image\clock\11-1.png" />
+    <Content Include="image\clock\11-2.png" />
+    <Content Include="image\clock\11-3.png" />
+    <Content Include="image\clock\111-1.png" />
+    <Content Include="image\clock\111-2.png" />
+    <Content Include="image\clock\111-3.png" />
+    <Content Include="image\clock\2-1.png" />
+    <Content Include="image\clock\2-2.png" />
+    <Content Include="image\clock\2-3.png" />
+    <Content Include="image\clock\2.png" />
+    <Content Include="image\clock\21-1.png" />
+    <Content Include="image\clock\21-2.png" />
+    <Content Include="image\clock\21-3.png" />
+    <Content Include="image\clock\211-1.png" />
+    <Content Include="image\clock\211-2.png" />
+    <Content Include="image\clock\211-3.png" />
+    <Content Include="image\clock\3-1.png" />
+    <Content Include="image\clock\3-2.png" />
+    <Content Include="image\clock\3-3.png" />
+    <Content Include="image\clock\3.png" />
+    <Content Include="image\clock\31-1.png" />
+    <Content Include="image\clock\31-2.png" />
+    <Content Include="image\clock\31-3.png" />
+    <Content Include="image\clock\311-1.png" />
+    <Content Include="image\clock\311-2.png" />
+    <Content Include="image\clock\311-3.png" />
+    <Content Include="image\clock\4-1.png" />
+    <Content Include="image\clock\4-2.png" />
+    <Content Include="image\clock\4-3.png" />
+    <Content Include="image\clock\4.png" />
+    <Content Include="image\clock\41-1.png" />
+    <Content Include="image\clock\41-2.png" />
+    <Content Include="image\clock\41-3.png" />
+    <Content Include="image\clock\5-1.png" />
+    <Content Include="image\clock\5-2.png" />
+    <Content Include="image\clock\5-3.png" />
+    <Content Include="image\clock\5.png" />
+    <Content Include="image\clock\51-1.png" />
+    <Content Include="image\clock\51-2.png" />
+    <Content Include="image\clock\51-3.png" />
+    <Content Include="image\clock\511-1.png" />
+    <Content Include="image\clock\511-2.png" />
+    <Content Include="image\clock\511-3.png" />
+    <Content Include="image\clock\6-1.png" />
+    <Content Include="image\clock\6-2.png" />
+    <Content Include="image\clock\6-3.png" />
+    <Content Include="image\clock\6.png" />
+    <Content Include="image\clock\7-1.png" />
+    <Content Include="image\clock\7-2.png" />
+    <Content Include="image\clock\7-3.png" />
+    <Content Include="image\clock\7.png" />
+    <Content Include="image\clock\8-1.png" />
+    <Content Include="image\clock\8-2.png" />
+    <Content Include="image\clock\8-3.png" />
+    <Content Include="image\clock\8.png" />
+    <Content Include="image\clock\9-1.png" />
+    <Content Include="image\clock\9-2.png" />
+    <Content Include="image\clock\9-3.png" />
+    <Content Include="image\clock\9.png" />
+    <Content Include="image\clock\am.png" />
+    <Content Include="image\clock\apm.png" />
+    <Content Include="image\clock\clockbg-blank.png" />
+    <Content Include="image\clock\clockbg1.png" />
+    <Content Include="image\clock\clockbg2.png" />
+    <Content Include="image\clock\clockbg3.png" />
+    <Content Include="image\clock\clockbg4.png" />
+    <Content Include="image\clock\clockbg5.png" />
+    <Content Include="image\clock\clockbg6.png" />
+    <Content Include="image\clock\pm.png" />
+    <Content Include="image\content-bg.jpg" />
+    <Content Include="image\headbg.jpg" />
+    <Content Include="image\home.png" />
+    <Content Include="image\icon.gif" />
+    <Content Include="image\img\btn_left.gif" />
+    <Content Include="image\img\btn_right.gif" />
+    <Content Include="image\img\checkbox.gif" />
+    <Content Include="image\img\input\input_left-focus.gif" />
+    <Content Include="image\img\input\input_left-hover.gif" />
+    <Content Include="image\img\input\input_left.gif" />
+    <Content Include="image\img\input\input_right-focus.gif" />
+    <Content Include="image\img\input\input_right-hover.gif" />
+    <Content Include="image\img\input\input_right.gif" />
+    <Content Include="image\img\input\input_text_left.gif" />
+    <Content Include="image\img\input\input_text_right.gif" />
+    <Content Include="image\img\radio.gif" />
+    <Content Include="image\img\select_left.gif" />
+    <Content Include="image\img\select_right.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-bl-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-bl-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-bl.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-bm-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-bm-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-bm.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-br-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-br-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-br.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-ml-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-ml-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-ml.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-mm-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-mm-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-mm.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-mr-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-mr-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-mr.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tl-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tl-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tl.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tm-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tm-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tm.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tr-focus.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tr-hover.gif" />
+    <Content Include="image\img\textarea\notneeded\textarea-tr.gif" />
+    <Content Include="image\img\textarea\textarea-mm-focus.gif" />
+    <Content Include="image\img\textarea\textarea-mm-hover.gif" />
+    <Content Include="image\img\textarea\textarea-mm.gif" />
+    <Content Include="image\img\textarea\textarea_bl.gif" />
+    <Content Include="image\img\textarea\textarea_bm.gif" />
+    <Content Include="image\img\textarea\textarea_br.gif" />
+    <Content Include="image\img\textarea\textarea_ml.gif" />
+    <Content Include="image\img\textarea\textarea_mr.gif" />
+    <Content Include="image\img\textarea\textarea_tl.gif" />
+    <Content Include="image\img\textarea\textarea_tm.gif" />
+    <Content Include="image\img\textarea\textarea_tr.gif" />
+    <Content Include="image\input.gif" />
+    <Content Include="image\loginbg.gif" />
+    <Content Include="image\mbg.jpg" />
+    <Content Include="image\menu-1.jpg" />
+    <Content Include="image\menu.jpg" />
+    <Content Include="image\r1.gif" />
+    <Content Include="image\r2.gif" />
+    <Content Include="image\r3.gif" />
+    <Content Include="image\r4.gif" />
+    <Content Include="image\r5.gif" />
+    <Content Include="image\rtext.gif" />
+    <Content Include="image\sprite.png" />
+    <Content Include="image\sr1.gif" />
+    <Content Include="image\sr2.gif" />
+    <Content Include="image\sr3.gif" />
+    <Content Include="image\sr4.gif" />
+    <Content Include="image\sr5.gif" />
+    <Content Include="image\t_header.gif" />
+    <Content Include="JS\admin.js" />
+    <Content Include="JS\Date.js" />
+    <Content Include="JS\ie6_png.js" />
+    <Content Include="JS\jquery-1.6.1-vsdoc.js" />
+    <Content Include="JS\jquery-1.6.1.min.js" />
+    <Content Include="JS\jquery.jdigiclock.js" />
+    <Content Include="JS\jquery.jqtransform.js" />
+    <Content Include="JS\Login.js" />
+    <Content Include="JS\myDate\calendar.js" />
+    <Content Include="JS\myDate\config.js" />
+    <Content Include="JS\myDate\lang\en.js" />
+    <Content Include="JS\myDate\lang\zh-cn.js" />
+    <Content Include="JS\myDate\lang\zh-tw.js" />
+    <Content Include="JS\myDate\My97DatePicker.htm" />
+    <Content Include="JS\myDate\skin\datePicker.gif" />
+    <Content Include="JS\myDate\skin\default\datepicker.css" />
+    <Content Include="JS\myDate\skin\default\img.gif" />
+    <Content Include="JS\myDate\skin\WdatePicker.css" />
+    <Content Include="JS\myDate\skin\whyGreen\bg.jpg" />
+    <Content Include="JS\myDate\skin\whyGreen\datepicker.css" />
+    <Content Include="JS\myDate\skin\whyGreen\img.gif" />
+    <Content Include="JS\myDate\WdatePicker.js" />
+    <Content Include="JS\Page.js" />
+    <Content Include="JS\UseCar.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="OfficeAdmin\AchiveMeeting.aspx" />
+    <Content Include="OfficeAdmin\Default.aspx" />
+    <Content Include="OfficeAdmin\ProcessMeetingEquipmentArr.aspx" />
+    <Content Include="Organizer\ApplyMeeting.aspx" />
+    <Content Include="Organizer\Default.aspx" />
+    <Content Include="SchoolUser\Default.aspx" />
+    <Content Include="Share\Error.aspx" />
+    <Content Include="Temp.aspx" />
+    <Content Include="Director_of_Eduction\MeetingApplyProcess.aspx" />
+    <Content Include="Under_Secretary_for_Education\Default.aspx" />
+    <Content Include="UseCarTest\ApplyUseCar.aspx" />
+    <Content Include="UseCarTest\ArrangeDrawOut.aspx" />
+    <Content Include="UseCarTest\CarApplyRenew.aspx" />
+    <Content Include="UseCarTest\ProcessApplyUseCar.aspx" />
+    <Content Include="UseCarTest\ReturnCar.aspx" />
+    <Content Include="UserCommom\attendMeeting.aspx" />
+    <Content Include="UserCommom\TurnOut.aspx" />
+    <Content Include="UserControl\AttendMeeting.ascx" />
+    <Content Include="UserControl\TurnOut.ascx" />
+    <Content Include="WebAdmin\DeleteUser.aspx" />
+    <Content Include="WebAdmin\MeetingEquipmentManager.aspx" />
+    <Content Include="WebAdmin\MeetingRoomManager.aspx" />
+    <Content Include="WebAdmin\MeetingTypeManager.aspx" />
+    <Content Include="WebAdmin\CreateUser.aspx" />
+    <Content Include="WebAdmin\Default.aspx" />
+    <Content Include="WebAdmin\RecoverPassword.aspx" />
+    <Content Include="WebAdmin\RoleManager.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AJAX\AddUserToRole.ashx.cs">
+      <DependentUpon>AddUserToRole.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\CheckCode.ashx.cs">
+      <DependentUpon>CheckCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\DeleteRole.ashx.cs">
+      <DependentUpon>DeleteRole.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\GetAllRoleForDelete.ashx.cs">
+      <DependentUpon>GetAllRoleForDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\GetAllUser.ashx.cs">
+      <DependentUpon>GetAllUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\GetAttendMeetingInfo.ashx.cs">
+      <DependentUpon>GetAttendMeetingInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\MeetingRoomRadioButtonList.ashx.cs">
+      <DependentUpon>MeetingRoomRadioButtonList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\RoleManager.cs" />
+    <Compile Include="AJAX\RoleManagereByUserName.ashx.cs">
+      <DependentUpon>RoleManagereByUserName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX\ssss.ashx.cs">
+      <DependentUpon>ssss.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director_of_Eduction\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director_of_Eduction\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Director_of_Eduction\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director_of_Eduction\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director_of_Eduction\ReviewMyProcess.aspx.cs">
+      <DependentUpon>ReviewMyProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director_of_Eduction\ReviewMyProcess.aspx.designer.cs">
+      <DependentUpon>ReviewMyProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentChecking.aspx.cs">
+      <DependentUpon>DocumentChecking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentChecking.aspx.designer.cs">
+      <DependentUpon>DocumentChecking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentCheckingByJU.aspx.cs">
+      <DependentUpon>DocumentCheckingByJU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentCheckingByJU.aspx.designer.cs">
+      <DependentUpon>DocumentCheckingByJU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentDraft.aspx.cs">
+      <DependentUpon>DocumentDraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentDraft.aspx.designer.cs">
+      <DependentUpon>DocumentDraft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocumentExamine.aspx.cs">
+      <DependentUpon>DocumentExamine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\DocumentExamine.aspx.designer.cs">
+      <DependentUpon>DocumentExamine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeAdmin\AchiveMeeting.aspx.cs">
+      <DependentUpon>AchiveMeeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficeAdmin\AchiveMeeting.aspx.designer.cs">
+      <DependentUpon>AchiveMeeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeAdmin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficeAdmin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeAdmin\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficeAdmin\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeAdmin\ProcessMeetingEquipmentArr.aspx.cs">
+      <DependentUpon>ProcessMeetingEquipmentArr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficeAdmin\ProcessMeetingEquipmentArr.aspx.designer.cs">
+      <DependentUpon>ProcessMeetingEquipmentArr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer\ApplyMeeting.aspx.cs">
+      <DependentUpon>ApplyMeeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organizer\ApplyMeeting.aspx.designer.cs">
+      <DependentUpon>ApplyMeeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organizer\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organizer\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolUser\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchoolUser\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolUser\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchoolUser\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Share\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Temp.aspx.cs">
+      <DependentUpon>Temp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Temp.aspx.designer.cs">
+      <DependentUpon>Temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director_of_Eduction\MeetingApplyProcess.aspx.cs">
+      <DependentUpon>MeetingApplyProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director_of_Eduction\MeetingApplyProcess.aspx.designer.cs">
+      <DependentUpon>MeetingApplyProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Under_Secretary_for_Education\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Under_Secretary_for_Education\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Under_Secretary_for_Education\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Under_Secretary_for_Education\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UseCarTest\ApplyUseCar.aspx.cs">
+      <DependentUpon>ApplyUseCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseCarTest\ApplyUseCar.aspx.designer.cs">
+      <DependentUpon>ApplyUseCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseCarTest\ArrangeDrawOut.aspx.cs">
+      <DependentUpon>ArrangeDrawOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseCarTest\ArrangeDrawOut.aspx.designer.cs">
+      <DependentUpon>ArrangeDrawOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseCarTest\CarApplyRenew.aspx.cs">
+      <DependentUpon>CarApplyRenew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseCarTest\CarApplyRenew.aspx.designer.cs">
+      <DependentUpon>CarApplyRenew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseCarTest\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseCarTest\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UseCarTest\ProcessApplyUseCar.aspx.cs">
+      <DependentUpon>ProcessApplyUseCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseCarTest\ProcessApplyUseCar.aspx.designer.cs">
+      <DependentUpon>ProcessApplyUseCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseCarTest\ReturnCar.aspx.cs">
+      <DependentUpon>ReturnCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseCarTest\ReturnCar.aspx.designer.cs">
+      <DependentUpon>ReturnCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCommom\attendMeeting.aspx.cs">
+      <DependentUpon>attendMeeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCommom\attendMeeting.aspx.designer.cs">
+      <DependentUpon>attendMeeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCommom\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCommom\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserCommom\TurnOut.aspx.cs">
+      <DependentUpon>TurnOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCommom\TurnOut.aspx.designer.cs">
+      <DependentUpon>TurnOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AttendMeeting.ascx.cs">
+      <DependentUpon>AttendMeeting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\AttendMeeting.ascx.designer.cs">
+      <DependentUpon>AttendMeeting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TurnOut.ascx.cs">
+      <DependentUpon>TurnOut.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\TurnOut.ascx.designer.cs">
+      <DependentUpon>TurnOut.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\DeleteUser.aspx.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\DeleteUser.aspx.designer.cs">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\MeetingEquipmentManager.aspx.cs">
+      <DependentUpon>MeetingEquipmentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\MeetingEquipmentManager.aspx.designer.cs">
+      <DependentUpon>MeetingEquipmentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\MeetingRoomManager.aspx.cs">
+      <DependentUpon>MeetingRoomManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\MeetingRoomManager.aspx.designer.cs">
+      <DependentUpon>MeetingRoomManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\MeetingTypeManager.aspx.cs">
+      <DependentUpon>MeetingTypeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\MeetingTypeManager.aspx.designer.cs">
+      <DependentUpon>MeetingTypeManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\RecoverPassword.aspx.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\RecoverPassword.aspx.designer.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="Document\Files\" />
+    <Folder Include="Document\Uploads\.svn\props\" />
+    <Folder Include="Document\Uploads\.svn\tmp\prop-base\" />
+    <Folder Include="Document\Uploads\.svn\tmp\props\" />
+    <Folder Include="Document\Uploads\.svn\tmp\text-base\" />
+    <Folder Include="Document\_assets\.svn\prop-base\" />
+    <Folder Include="Document\_assets\.svn\props\" />
+    <Folder Include="Document\_assets\.svn\text-base\" />
+    <Folder Include="Document\_assets\.svn\tmp\prop-base\" />
+    <Folder Include="Document\_assets\.svn\tmp\props\" />
+    <Folder Include="Document\_assets\.svn\tmp\text-base\" />
+    <Folder Include="Document\_assets\css\.svn\prop-base\" />
+    <Folder Include="Document\_assets\css\.svn\props\" />
+    <Folder Include="Document\_assets\css\.svn\tmp\prop-base\" />
+    <Folder Include="Document\_assets\css\.svn\tmp\props\" />
+    <Folder Include="Document\_assets\css\.svn\tmp\text-base\" />
+    <Folder Include="Document\_assets\img\.svn\props\" />
+    <Folder Include="Document\_assets\img\.svn\tmp\prop-base\" />
+    <Folder Include="Document\_assets\img\.svn\tmp\props\" />
+    <Folder Include="Document\_assets\img\.svn\tmp\text-base\" />
+    <Folder Include="image\img\.svn\prop-base\" />
+    <Folder Include="image\img\.svn\text-base\" />
+    <Folder Include="image\img\.svn\tmp\prop-base\" />
+    <Folder Include="image\img\.svn\tmp\props\" />
+    <Folder Include="image\img\.svn\tmp\text-base\" />
+    <Folder Include="image\img\input\.svn\prop-base\" />
+    <Folder Include="image\img\input\.svn\text-base\" />
+    <Folder Include="image\img\input\.svn\tmp\prop-base\" />
+    <Folder Include="image\img\input\.svn\tmp\props\" />
+    <Folder Include="image\img\input\.svn\tmp\text-base\" />
+    <Folder Include="image\img\textarea\.svn\prop-base\" />
+    <Folder Include="image\img\textarea\.svn\text-base\" />
+    <Folder Include="image\img\textarea\.svn\tmp\prop-base\" />
+    <Folder Include="image\img\textarea\.svn\tmp\props\" />
+    <Folder Include="image\img\textarea\.svn\tmp\text-base\" />
+    <Folder Include="image\img\textarea\notneeded\.svn\prop-base\" />
+    <Folder Include="image\img\textarea\notneeded\.svn\text-base\" />
+    <Folder Include="image\img\textarea\notneeded\.svn\tmp\prop-base\" />
+    <Folder Include="image\img\textarea\notneeded\.svn\tmp\props\" />
+    <Folder Include="image\img\textarea\notneeded\.svn\tmp\text-base\" />
+    <Folder Include="JS\myDate\lang\.svn\prop-base\" />
+    <Folder Include="JS\myDate\lang\.svn\props\" />
+    <Folder Include="JS\myDate\lang\.svn\tmp\prop-base\" />
+    <Folder Include="JS\myDate\lang\.svn\tmp\props\" />
+    <Folder Include="JS\myDate\lang\.svn\tmp\text-base\" />
+    <Folder Include="JS\myDate\skin\.svn\props\" />
+    <Folder Include="JS\myDate\skin\.svn\tmp\prop-base\" />
+    <Folder Include="JS\myDate\skin\.svn\tmp\props\" />
+    <Folder Include="JS\myDate\skin\.svn\tmp\text-base\" />
+    <Folder Include="JS\myDate\skin\default\.svn\props\" />
+    <Folder Include="JS\myDate\skin\default\.svn\tmp\prop-base\" />
+    <Folder Include="JS\myDate\skin\default\.svn\tmp\props\" />
+    <Folder Include="JS\myDate\skin\default\.svn\tmp\text-base\" />
+    <Folder Include="JS\myDate\skin\whyGreen\.svn\props\" />
+    <Folder Include="JS\myDate\skin\whyGreen\.svn\tmp\prop-base\" />
+    <Folder Include="JS\myDate\skin\whyGreen\.svn\tmp\props\" />
+    <Folder Include="JS\myDate\skin\whyGreen\.svn\tmp\text-base\" />
+    <Folder Include="Under_Secretary_for_Education\.svn\prop-base\" />
+    <Folder Include="Under_Secretary_for_Education\.svn\props\" />
+    <Folder Include="Under_Secretary_for_Education\.svn\text-base\" />
+    <Folder Include="Under_Secretary_for_Education\.svn\tmp\prop-base\" />
+    <Folder Include="Under_Secretary_for_Education\.svn\tmp\props\" />
+    <Folder Include="Under_Secretary_for_Education\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YuanShanOA.BusinessLogic\YunShanOA.BusinessLogic.csproj">
+      <Project>{AAC06886-EB58-4952-8EB3-02751C04C6A1}</Project>
+      <Name>YunShanOA.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YuanShanOA.DataAccess\YunShanOA.DataAccess.csproj">
+      <Project>{DAC581D1-729E-4033-9CDB-FF5E82083D89}</Project>
+      <Name>YunShanOA.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YuanShanOA.Model\YunShanOA.Model.csproj">
+      <Project>{CF3BA126-452C-4829-A2AF-489845B1B82B}</Project>
+      <Name>YunShanOA.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YunShanOA.CacheDependencyFactory\YunShanOA.CacheDependencyFactory.csproj">
+      <Project>{4E9A5D70-B066-496D-B97D-994C232D4B6E}</Project>
+      <Name>YunShanOA.CacheDependencyFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YunShanOA.Common\YunShanOA.Common.csproj">
+      <Project>{EFD3F66A-F2EC-4906-8446-31F6ED990671}</Project>
+      <Name>YunShanOA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YunShanOA.Workflow\YunShanOA.Workflow.csproj">
+      <Project>{57995463-6A0D-4389-BF75-CD985F1E75A8}</Project>
+      <Name>YunShanOA.Workflow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AJAX\MeetingRoomRadioButtonList.ashx" />
+    <Content Include="Director_of_Eduction\MasterPage.Master" />
+    <Content Include="AJAX\GetConfirmID.ashx" />
+    <Content Include="AJAX\CheckCode.ashx" />
+    <Content Include="AJAX\GetAllUser.ashx" />
+    <Content Include="AJAX\AddUserToRole.ashx" />
+    <Content Include="AJAX\GetAllRoleForDelete.ashx" />
+    <Content Include="AJAX\RoleManagereByUserName.ashx" />
+    <Content Include="AJAX\DeleteRole.ashx" />
+    <Content Include="AJAX\ssss.ashx" />
+    <Content Include="AJAX\GetAttendMeetingInfo.ashx" />
+    <Content Include="Director_of_Eduction\Web.config" />
+    <None Include="DocumentTemplate\1.docx" />
+    <None Include="DocumentTemplate\2.docx" />
+    <None Include="DocumentTemplate\3.docx" />
+    <None Include="DocumentTemplate\4.docx" />
+    <None Include="DocumentTemplate\5.docx" />
+    <None Include="Document\Uploads\.svn\all-wcprops" />
+    <None Include="Document\Uploads\.svn\entries" />
+    <None Include="Document\Uploads\.svn\prop-base\【第二季冠军】Ruben Studdard-I Need An Angel.mp3.svn-base" />
+    <None Include="Document\Uploads\.svn\text-base\【第二季冠军】Ruben Studdard-I Need An Angel.mp3.svn-base" />
+    <None Include="Document\_assets\.svn\all-wcprops" />
+    <None Include="Document\_assets\.svn\entries" />
+    <None Include="Document\_assets\css\.svn\all-wcprops" />
+    <None Include="Document\_assets\css\.svn\entries" />
+    <None Include="Document\_assets\css\.svn\text-base\progress.css.svn-base" />
+    <None Include="Document\_assets\css\.svn\text-base\upload.css.svn-base" />
+    <None Include="Document\_assets\img\.svn\all-wcprops" />
+    <None Include="Document\_assets\img\.svn\entries" />
+    <None Include="Document\_assets\img\.svn\prop-base\error.png.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_bg_large.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_bg_lightblue.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_green.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_lightblue.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_orange.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_orange_large.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_red.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_solidblue.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\progress_yellow.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\safari.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\safari_bg.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\success.png.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\Thumbs.db.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\vista.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\vista_bg.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\prop-base\xp.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\error.png.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_bg_large.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_bg_lightblue.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_green.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_lightblue.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_orange.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_orange_large.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_red.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_solidblue.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\progress_yellow.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\safari.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\safari_bg.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\success.png.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\Thumbs.db.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\vista.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\vista_bg.gif.svn-base" />
+    <None Include="Document\_assets\img\.svn\text-base\xp.gif.svn-base" />
+    <None Include="Document\_assets\img\Thumbs.db" />
+    <None Include="image\img\.svn\entries" />
+    <None Include="image\img\.svn\props\btn_left.gif.svn-work" />
+    <None Include="image\img\.svn\props\btn_right.gif.svn-work" />
+    <None Include="image\img\.svn\props\checkbox.gif.svn-work" />
+    <None Include="image\img\.svn\props\radio.gif.svn-work" />
+    <None Include="image\img\.svn\props\select_left.gif.svn-work" />
+    <None Include="image\img\.svn\props\select_right.gif.svn-work" />
+    <None Include="image\img\input\.svn\entries" />
+    <None Include="image\img\input\.svn\props\input_left-focus.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_left-hover.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_left.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_right-focus.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_right-hover.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_right.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_text_left.gif.svn-work" />
+    <None Include="image\img\input\.svn\props\input_text_right.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\entries" />
+    <None Include="image\img\textarea\.svn\props\textarea-mm-focus.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea-mm-hover.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea-mm.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_bl.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_bm.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_br.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_ml.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_mr.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_tl.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_tm.gif.svn-work" />
+    <None Include="image\img\textarea\.svn\props\textarea_tr.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\entries" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-bl-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-bl-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-bl.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-bm-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-bm-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-bm.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-br-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-br-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-br.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-ml-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-ml-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-ml.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-mm-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-mm-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-mm.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-mr-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-mr-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-mr.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tl-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tl-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tl.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tm-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tm-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tm.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tr-focus.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tr-hover.gif.svn-work" />
+    <None Include="image\img\textarea\notneeded\.svn\props\textarea-tr.gif.svn-work" />
+    <None Include="JS\myDate\lang\.svn\all-wcprops" />
+    <None Include="JS\myDate\lang\.svn\dir-prop-base" />
+    <None Include="JS\myDate\lang\.svn\entries" />
+    <None Include="JS\myDate\lang\.svn\text-base\en.js.svn-base" />
+    <None Include="JS\myDate\lang\.svn\text-base\zh-cn.js.svn-base" />
+    <None Include="JS\myDate\lang\.svn\text-base\zh-tw.js.svn-base" />
+    <None Include="JS\myDate\skin\.svn\all-wcprops" />
+    <None Include="JS\myDate\skin\.svn\dir-prop-base" />
+    <None Include="JS\myDate\skin\.svn\entries" />
+    <None Include="JS\myDate\skin\.svn\prop-base\datePicker.gif.svn-base" />
+    <None Include="JS\myDate\skin\.svn\text-base\datePicker.gif.svn-base" />
+    <None Include="JS\myDate\skin\.svn\text-base\WdatePicker.css.svn-base" />
+    <None Include="JS\myDate\skin\default\.svn\all-wcprops" />
+    <None Include="JS\myDate\skin\default\.svn\dir-prop-base" />
+    <None Include="JS\myDate\skin\default\.svn\entries" />
+    <None Include="JS\myDate\skin\default\.svn\prop-base\img.gif.svn-base" />
+    <None Include="JS\myDate\skin\default\.svn\text-base\datepicker.css.svn-base" />
+    <None Include="JS\myDate\skin\default\.svn\text-base\img.gif.svn-base" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\all-wcprops" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\dir-prop-base" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\entries" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\prop-base\bg.jpg.svn-base" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\prop-base\img.gif.svn-base" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\text-base\bg.jpg.svn-base" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\text-base\datepicker.css.svn-base" />
+    <None Include="JS\myDate\skin\whyGreen\.svn\text-base\img.gif.svn-base" />
+    <Content Include="OfficeAdmin\MasterPage.Master" />
+    <Content Include="Organizer\MasterPage.Master" />
+    <Content Include="SchoolUser\MasterPage.Master" />
+    <Content Include="UseCarTest\MasterPage.Master" />
+    <Content Include="UserCommom\MasterPage.Master" />
+    <Content Include="WebAdmin\MasterPage.Master" />
+    <Content Include="OfficeAdmin\Web.config" />
+    <Content Include="Organizer\66Web.config" />
+    <Content Include="SchoolUser\Web.config" />
+    <None Include="Under_Secretary_for_Education\.svn\all-wcprops" />
+    <None Include="Under_Secretary_for_Education\.svn\dir-prop-base" />
+    <None Include="Under_Secretary_for_Education\.svn\entries" />
+    <Content Include="Under_Secretary_for_Education\MasterPage.Master" />
+    <Content Include="Under_Secretary_for_Education\Web.config" />
+    <Content Include="UserCommom\Web.config" />
+    <Content Include="UserControl\Web.config" />
+    <Content Include="UseCarTest\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10821</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

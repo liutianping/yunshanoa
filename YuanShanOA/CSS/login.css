@@ -1,0 +1,155 @@
+﻿body 
+{
+	background-image:url(../image/bg-1.jpg); 
+    background-repeat:no-repeat; 
+	 font:15px "宋体","Arial"，"黑体","华文仿宋";
+    background-position:center top; 
+	background-color:#042670; 
+	font-weight:500;
+}
+
+.role
+{
+	 left:20%;
+	 top:20%;
+	 position:absolute;
+	width:768px;
+	height:128px;
+	float:left;
+}
+
+.r
+{
+	width:128px;
+	height:128px;
+	float:left;
+	
+	 background-position:center top;
+}
+
+#rtext
+{
+	width:128px;
+	height:128px;
+	float:left;
+	background:url(/image/rtext.gif) no-repeat ;
+}
+
+#r1
+{
+	 background-image:url(/image/r1.gif);
+}
+
+#r2
+{
+	 background-image:url(/image/r2.gif);
+	 
+}
+
+#r3
+{
+	 background-image:url(/image/r3.gif);
+	 
+}
+
+#r4
+{
+	 background-image:url(/image/r4.gif);
+	
+}
+
+#r5
+{
+	 background-image:url(/image/r5.gif);
+	 
+}
+
+.rhover
+{
+	cursor:pointer;
+	background-position:center  bottom;
+}
+
+.rclick
+{
+	background-position:center  bottom;
+}
+
+.main
+{
+	clear:both;
+	width:500px;
+    height:250px;
+	position:absolute;
+	background:url(/image/loginbg.gif) no-repeat top left;
+	left:50%;
+	top:270px;
+	 margin-left:-210px;
+	
+}
+
+
+
+.login
+{
+	
+	margin:36px 0px 0px 70px;
+	
+}
+
+.text
+{
+	height:30px;
+	width:250px;
+	 margin:5px;	
+}
+
+.lable
+{
+	 
+	font-size:16px;
+	
+	width:100px;
+}
+
+.btn
+{
+	
+	background:url(/image/b_login.gif) no-repeat top left;
+	width:76px;
+	height:27px;
+	 border:0px;
+	 outline:0 none;
+	
+	cursor:pointer;
+	
+}
+
+
+
+.btnhover
+{
+	background:url(/image/b_login-1.gif) no-repeat top left;
+}
+
+
+
+.textinput 
+{
+      background:url(/image/input.gif) no-repeat left top;
+      padding:4px 8px;
+      border:none;
+      height:16px;
+      width:180px;
+}
+
+
+#table tr
+{
+	
+	height:28px;
+	 height:30px \0;
+}
+
+
+

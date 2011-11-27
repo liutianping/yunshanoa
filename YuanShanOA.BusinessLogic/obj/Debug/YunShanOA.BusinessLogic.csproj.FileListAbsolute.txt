@@ -1,0 +1,11 @@
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.BusinessLogic.dll
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.BusinessLogic.pdb
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.DALFactory.dll
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.IDataAccess.dll
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.Model.dll
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.Model.pdb
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.DALFactory.pdb
+G:\YunShanOA\YuanShanOA.BusinessLogic\bin\Debug\YunShanOA.IDataAccess.pdb
+G:\YunShanOA\YuanShanOA.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+G:\YunShanOA\YuanShanOA.BusinessLogic\obj\Debug\YunShanOA.BusinessLogic.dll
+G:\YunShanOA\YuanShanOA.BusinessLogic\obj\Debug\YunShanOA.BusinessLogic.pdb
